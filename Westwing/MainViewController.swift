@@ -30,7 +30,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("spaceCellIdentifier", forIndexPath: indexPath) as! SpaceTableViewCell
         cell.title.text = spaceArray[indexPath.row].name
-        cell.details.text = spaceArray[indexPath.row].description
+        cell.details.text = spaceArray[indexPath.row].subline
         cell.bannerImage.image = UIImage(named: "noimageicon")
         
         if let url = spaceArray[indexPath.row].bannerImage?.url{

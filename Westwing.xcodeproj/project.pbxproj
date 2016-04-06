@@ -19,6 +19,7 @@
 		09D71F371CB3FB0B00B5CB91 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F361CB3FB0B00B5CB91 /* Image.swift */; };
 		09D71F391CB4258900B5CB91 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F381CB4258900B5CB91 /* Space.swift */; };
 		09D71F3B1CB42A0000B5CB91 /* SpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F3A1CB42A0000B5CB91 /* SpaceTableViewCell.swift */; };
+		09D71F3F1CB548F800B5CB91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F3E1CB548F800B5CB91 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		09D71F361CB3FB0B00B5CB91 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		09D71F381CB4258900B5CB91 /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		09D71F3A1CB42A0000B5CB91 /* SpaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceTableViewCell.swift; sourceTree = "<group>"; };
+		09D71F3E1CB548F800B5CB91 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				09D71F2C1CB2965A00B5CB91 /* API */,
 				09D71F341CB2B55000B5CB91 /* Model */,
 				09D71F331CB2B53900B5CB91 /* Controllers */,
+				09D71F401CB5490500B5CB91 /* Supporting files */,
 				09D71F181CB2964A00B5CB91 /* Info.plist */,
 			);
 			path = Westwing;
@@ -144,6 +147,14 @@
 				09D71F151CB2964A00B5CB91 /* LaunchScreen.storyboard */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		09D71F401CB5490500B5CB91 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				09D71F3E1CB548F800B5CB91 /* Constants.swift */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				09D71F321CB2B27100B5CB91 /* DetailedViewController.swift in Sources */,
 				09D71F0D1CB2964A00B5CB91 /* AppDelegate.swift in Sources */,
 				09D71F301CB2A30F00B5CB91 /* InitialViewController.swift in Sources */,
+				09D71F3F1CB548F800B5CB91 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

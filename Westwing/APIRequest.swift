@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-let URL_JSON = "http://static.westwing.de/cms/dont-delete/programming_task/data.json"
-
 class APIRequest {
     
     func fetchData (completion: (jsonData: [Space]) -> Void) {
