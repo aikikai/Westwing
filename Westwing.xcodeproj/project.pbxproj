@@ -12,7 +12,7 @@
 		09D71F121CB2964A00B5CB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D71F101CB2964A00B5CB91 /* Main.storyboard */; };
 		09D71F141CB2964A00B5CB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D71F131CB2964A00B5CB91 /* Assets.xcassets */; };
 		09D71F171CB2964A00B5CB91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D71F151CB2964A00B5CB91 /* LaunchScreen.storyboard */; };
-		09D71F221CB2964A00B5CB91 /* WestwingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F211CB2964A00B5CB91 /* WestwingTests.swift */; };
+		09D71F221CB2964A00B5CB91 /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F211CB2964A00B5CB91 /* ImagesTests.swift */; };
 		09D71F2E1CB2967E00B5CB91 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F2D1CB2967E00B5CB91 /* APIRequest.swift */; };
 		09D71F301CB2A30F00B5CB91 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F2F1CB2A30F00B5CB91 /* InitialViewController.swift */; };
 		09D71F321CB2B27100B5CB91 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F311CB2B27100B5CB91 /* DetailedViewController.swift */; };
@@ -20,6 +20,8 @@
 		09D71F391CB4258900B5CB91 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F381CB4258900B5CB91 /* Space.swift */; };
 		09D71F3B1CB42A0000B5CB91 /* SpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F3A1CB42A0000B5CB91 /* SpaceTableViewCell.swift */; };
 		09D71F3F1CB548F800B5CB91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F3E1CB548F800B5CB91 /* Constants.swift */; };
+		09D71F421CB5729100B5CB91 /* SpacesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F411CB5729100B5CB91 /* SpacesTest.swift */; };
+		09D71F451CB58B4200B5CB91 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F441CB58B4200B5CB91 /* RequestTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 		09D71F161CB2964A00B5CB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D71F181CB2964A00B5CB91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D71F1D1CB2964A00B5CB91 /* WestwingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WestwingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09D71F211CB2964A00B5CB91 /* WestwingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestwingTests.swift; sourceTree = "<group>"; };
+		09D71F211CB2964A00B5CB91 /* ImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTests.swift; sourceTree = "<group>"; };
 		09D71F231CB2964A00B5CB91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D71F2D1CB2967E00B5CB91 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		09D71F2F1CB2A30F00B5CB91 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		09D71F381CB4258900B5CB91 /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		09D71F3A1CB42A0000B5CB91 /* SpaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceTableViewCell.swift; sourceTree = "<group>"; };
 		09D71F3E1CB548F800B5CB91 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09D71F411CB5729100B5CB91 /* SpacesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpacesTest.swift; sourceTree = "<group>"; };
+		09D71F441CB58B4200B5CB91 /* RequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,9 @@
 		09D71F201CB2964A00B5CB91 /* WestwingTests */ = {
 			isa = PBXGroup;
 			children = (
-				09D71F211CB2964A00B5CB91 /* WestwingTests.swift */,
+				09D71F211CB2964A00B5CB91 /* ImagesTests.swift */,
+				09D71F411CB5729100B5CB91 /* SpacesTest.swift */,
+				09D71F441CB58B4200B5CB91 /* RequestTest.swift */,
 				09D71F231CB2964A00B5CB91 /* Info.plist */,
 			);
 			path = WestwingTests;
@@ -132,9 +138,9 @@
 		09D71F341CB2B55000B5CB91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				09D71F431CB58AB500B5CB91 /* Cells */,
 				09D71F361CB3FB0B00B5CB91 /* Image.swift */,
 				09D71F381CB4258900B5CB91 /* Space.swift */,
-				09D71F3A1CB42A0000B5CB91 /* SpaceTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,6 +161,14 @@
 				09D71F3E1CB548F800B5CB91 /* Constants.swift */,
 			);
 			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		09D71F431CB58AB500B5CB91 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				09D71F3A1CB42A0000B5CB91 /* SpaceTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D71F221CB2964A00B5CB91 /* WestwingTests.swift in Sources */,
+				09D71F451CB58B4200B5CB91 /* RequestTest.swift in Sources */,
+				09D71F421CB5729100B5CB91 /* SpacesTest.swift in Sources */,
+				09D71F221CB2964A00B5CB91 /* ImagesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

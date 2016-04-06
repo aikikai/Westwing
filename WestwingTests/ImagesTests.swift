@@ -9,7 +9,7 @@
 import XCTest
 @testable import Westwing
 
-class WestwingTests: XCTestCase {
+class ImagesTests: XCTestCase {
     var testObject : Image!
     let jsonData = ["banner": ["url":"https://static.westwing.de/c/c-die-moderne-kueche2-05131-ml.jpg", "width":"640", "height":"360"] ]
     let emptyJson : Dictionary<String, Dictionary<String, String>> = Dictionary<String, Dictionary<String, String>>()
@@ -17,7 +17,6 @@ class WestwingTests: XCTestCase {
     static let url = "https://static.westwing.de/c/c-die-moderne-kueche2-05131-ml.jpg"
     static let width = 640
     static let height = 360
-    
     
     override func setUp() {
         super.setUp()
@@ -29,14 +28,13 @@ class WestwingTests: XCTestCase {
         super.tearDown()
     }
     
-    
     //return the proper object is I pass the proper dictionary
     func testImageIsInitialicedFromProperDict(){
         XCTAssertNotNil(testObject, "Error when returning image object with correct dict")
     }
     
     func testImageUrlAssignment(){
-        XCTAssertEqual(testObject.url, WestwingTests.url, "Url was not assigned.")
+        XCTAssertEqual(testObject.url, ImagesTests.url, "Url was not assigned.")
     }
     
     

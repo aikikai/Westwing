@@ -17,8 +17,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.estimatedRowHeight = 110
-        tableView.rowHeight = UITableViewAutomaticDimension        
     }
 
     
@@ -48,6 +46,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return spaceArray.count
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 88.0
+    }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let selectedIndex = tableView.indexPathForSelectedRow

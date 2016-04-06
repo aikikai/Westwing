@@ -17,9 +17,8 @@ class SpaceTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-    
     }
-
+    
     func loadImage(link: String?){
         if link != nil, let url = NSURL(string: link!) {
             NSURLSession.sharedSession().dataTaskWithURL(url) { data, response, error in
@@ -38,6 +37,7 @@ class SpaceTableViewCell: UITableViewCell {
             self.bannerImage.image = UIImage(named: "noimage")
         }
     }
+    
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
