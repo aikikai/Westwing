@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C2DDED1CBE99E700B8BA4F /* APIRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2DDEC1CBE99E700B8BA4F /* APIRequestTest.swift */; };
 		09D71F0D1CB2964A00B5CB91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F0C1CB2964A00B5CB91 /* AppDelegate.swift */; };
 		09D71F0F1CB2964A00B5CB91 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D71F0E1CB2964A00B5CB91 /* MainViewController.swift */; };
 		09D71F121CB2964A00B5CB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D71F101CB2964A00B5CB91 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09C2DDEC1CBE99E700B8BA4F /* APIRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestTest.swift; sourceTree = "<group>"; };
 		09D71F091CB2964A00B5CB91 /* Westwing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westwing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D71F0C1CB2964A00B5CB91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D71F0E1CB2964A00B5CB91 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				09D71F211CB2964A00B5CB91 /* ImagesTests.swift */,
 				09D71F411CB5729100B5CB91 /* SpacesTest.swift */,
 				09D71F441CB58B4200B5CB91 /* RequestTest.swift */,
+				09C2DDEC1CBE99E700B8BA4F /* APIRequestTest.swift */,
 				09D71F231CB2964A00B5CB91 /* Info.plist */,
 			);
 			path = WestwingTests;
@@ -290,6 +293,7 @@
 			files = (
 				09D71F451CB58B4200B5CB91 /* RequestTest.swift in Sources */,
 				09D71F421CB5729100B5CB91 /* SpacesTest.swift in Sources */,
+				09C2DDED1CBE99E700B8BA4F /* APIRequestTest.swift in Sources */,
 				09D71F221CB2964A00B5CB91 /* ImagesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

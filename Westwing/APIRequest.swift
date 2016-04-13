@@ -10,29 +10,34 @@ import Foundation
 
 class APIRequest {
     
+    var completionLocal : ((jsonData: [Space]) -> Void)?
+    
     func fetchData (completion: (jsonData: [Space]) -> Void) {
+        completionLocal = completion
         guard let URL = NSURL(string: URL_JSON) else { return }
-        let task = NSURLSession.sharedSession().dataTaskWithURL(URL) { (data, response, error) -> Void in
-            guard error == nil && data != nil  else {
-                print("Failed to download data from the site.")
-                return
-            }
-            do {
-                if case let dictionaries as [Dictionary<String, AnyObject>] = try NSJSONSerialization.JSONObjectWithData(data!, options: []) {
-                    var spaceArray = [Space]()
-                    var space : Space!
-                    
-                    for var spaceTemp in dictionaries{
-                        space = Space(content: spaceTemp)
-                        spaceArray.append(space)
-                    }
-                                        
-                    completion(jsonData: spaceArray)
-                }
-            } catch {
-                print("Unexpected data format provided by server.")
-            }
-        }
+        let task = NSURLSession.sharedSession().dataTaskWithURL(URL, completionHandler: parseServerData)
         task.resume()
+    }
+    
+
+    func parseServerData(data : NSData?, response: NSURLResponse?, error: NSError?){
+        guard error == nil && data != nil else{
+            print("Filed downloading data from the site")
+            return
+        }
+        do{
+            if case let dictionaries as [Dictionary<String, AnyObject>] = try NSJSONSerialization.JSONObjectWithData(data!, options: []) {
+                var spaceArray = [Space]()
+                var space : Space!
+                
+                for var spaceTemp in dictionaries{
+                    space = Space(content: spaceTemp)
+                    spaceArray.append(space)
+                }
+                completionLocal?(jsonData: spaceArray)
+            }
+        }catch _{
+            print("Unexpected data format provided by server")
+        }
     }
 }
